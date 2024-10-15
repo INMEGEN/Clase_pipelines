@@ -11,14 +11,14 @@ Utilizando el comando **ssh** conectate a la dirección drona.inmegen.gob.mx o a
 
 Por ejemplo:
 
-		ssh alumnoN@10.0.15.11 
+	ssh alumnoN@10.0.15.11 
 
 Sustituye la N de "alumnoN" por el número que te tocó.
 
 ### Clona este repositorio
 Para clonar este repositorio utiliza el comando git clone
 
-		git clone 
+	git clone https://github.com/INMEGEN/Clase_pipelines.git
 
 
 ### Obten los datos de prueba
