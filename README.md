@@ -1,4 +1,9 @@
+[![INMEGEN](https://www.inmegen.gob.mx/static/zinnia/inmegen_logo_sl.png)](https://www.inmegen.gob.mx/)
+
 # Aprende a utilizar los flujos de análisis bioinformáticos internos del Inmegen
+
+[![Nextflow](https://img.shields.io/badge/nextflow%20DSL2-%E2%89%A522.10.7-23aa62.svg)](https://www.nextflow.io/)
+[![run with docker](https://img.shields.io/badge/run%20with-docker-0db7ed?labelColor=000000&logo=docker)](https://www.docker.com/)
 
 En este curso aprenderás a ejecutar los flujos de análisis bioinformáticos del Inmegen en los equipos de supercómputo del instituto
 Consulta la información sobre estos flujos [aquí](https://serviciosbio.inmegen.gob.mx/)
