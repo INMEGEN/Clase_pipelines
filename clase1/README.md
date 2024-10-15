@@ -23,7 +23,7 @@ Para clonar este repositorio utiliza el comando git clone
 
 ### Obtén los datos de prueba
 
- - Crea un directorio en tu home denominado data:
+ - Crea el directorio data/ en tu home:
 
 		mkdir data
 
@@ -47,7 +47,7 @@ Modifica los archivos main.nf, modules.nf y nextflow.config para automatizar las
 
 #### Forma de correr FASTQC
 
-1. Colócate en tu home y crea un directorio llamado ej_fastqc
+1. Colócate en tu home y crea el directorio ej_fastqc/
 
 		cd
 		mkdir ej_fastqc
@@ -56,10 +56,9 @@ Modifica los archivos main.nf, modules.nf y nextflow.config para automatizar las
 
 		fastqc -o ej_fastqc -t 1 -f fastq -q data/HBR_Rep1_ERCC-Mix2_Build37-ErccTranscripts-chr22.read1.fastq.gz data/HBR_Rep1_ERCC-Mix2_Build37-ErccTranscripts-chr22.read2.fastq.gz 
 
-Revisa que salida obtuvimos en la carpeta ej_fastqc
+Revisa la salida que obtuvimos en la carpeta ej_fastqc
 
-
-3. Modificamos el comando de fastqc para correrlo en un proceso de NextFlow
+3. Modificamos el comando de fastqc para utilizarlo en un proceso de NextFlow
 
 - Entrada del proceso fastqc: tupla [sample,[read1,read2]]
 
@@ -75,9 +74,9 @@ Revisa que salida obtuvimos en la carpeta ej_fastqc
   		fastqc -o ${sample} -t ${params.ncrs} -f fastq -q ${reads[0]} ${reads[1]}
 
 
-4. Modifica el proceso fastqc en el archivo main.nf y modules.nf 
+4. Modifica el proceso fastqc en el archivo modules.nf 
 
-5. Modifica el archivo nextflow.config 
+5. Modifica el archivo main.nf y nextflow.config 
 
 6. Corre NextFlow con el comando:
 
@@ -87,7 +86,7 @@ Revisa que salida obtuvimos en la carpeta ej_fastqc
 
 #### Forma de correr FASTP 
 
-1. Colócate en tu home y crea un directorio llamado ej_fastqc
+1. Colócate en tu home y crea el directorio ej_fastqc/
 
 		cd
 		mkdir ej_fastp
@@ -96,7 +95,7 @@ Revisa que salida obtuvimos en la carpeta ej_fastqc
 
 		fastp --in1 data/HBR_Rep1_ERCC-Mix2_Build37-ErccTranscripts-chr22.read1.fastq.gz --in2 data/HBR_Rep1_ERCC-Mix2_Build37-ErccTranscripts-chr22.read2.fastq.gz --out1 ej_fastp/HBR_Rep1_ERCC-Mix2_Build37_R1.trimmed.fq.gz --out2 ej_fastp/HBR_Rep1_ERCC-Mix2_Build37_R2.trimmed.fq.gz -g 10 -q 20 -l 50 -h HBR_Rep1_fastp.html
 
-Como el archivo json tiene un nombre genérico, le cambiamos el nombre con:
+Como el archivo json tiene un nombre genérico, modificamos su nombre para que contenga el nombre de la muestra a la que pertenece con:
 
 	mv fastp.json HBR_Rep1_fastp.json
 
