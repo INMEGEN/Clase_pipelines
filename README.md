@@ -27,7 +27,7 @@ Para clonar el repositorio pipelines Inmegen
 
 	git clone https://github.com/INMEGEN/Pipelines_INMEGEN.git
 
-### Pofesores
+### Profesores
 
 Alejandra Cervera Taboada [acerverat@inmegen.gob.mx](acerverat@inmegen.gob.mx)
 
