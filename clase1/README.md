@@ -47,7 +47,7 @@ Modifica los archivos main.nf, modules.nf y nextflow.config para automatizar las
 
 #### Forma de correr FASTQC
 
-1. Colocate en tu home y crea un directorio llamado ej_fastqc
+1. Colócate en tu home y crea un directorio llamado ej_fastqc
 
 		cd
 		mkdir ej_fastqc
@@ -83,11 +83,11 @@ Revisa que salida obtuvimos en la carpeta ej_fastqc
 
 		nextflow run main.nf
 
-¿que observas en el directorio resultados/out?
+¿qué observas en el directorio resultados/out?
 
 #### Forma de correr FASTP 
 
-1. Colocate en tu home y crea un directorio llamado ej_fastqc
+1. Colócate en tu home y crea un directorio llamado ej_fastqc
 
 		cd
 		mkdir ej_fastp
@@ -96,7 +96,7 @@ Revisa que salida obtuvimos en la carpeta ej_fastqc
 
 		fastp --in1 data/HBR_Rep1_ERCC-Mix2_Build37-ErccTranscripts-chr22.read1.fastq.gz --in2 data/HBR_Rep1_ERCC-Mix2_Build37-ErccTranscripts-chr22.read2.fastq.gz --out1 ej_fastp/HBR_Rep1_ERCC-Mix2_Build37_R1.trimmed.fq.gz --out2 ej_fastp/HBR_Rep1_ERCC-Mix2_Build37_R2.trimmed.fq.gz -g 10 -q 20 -l 50 -h HBR_Rep1_fastp.html
 
-Como el archivo json tiene un nombre generico le cambuamos el nombre con:
+Como el archivo json tiene un nombre genérico, le cambiamos el nombre con:
 
 	mv fastp.json HBR_Rep1_fastp.json
 
@@ -122,7 +122,7 @@ Como el archivo json tiene un nombre generico le cambuamos el nombre con:
 
 		nextflow run main.nf
 
-¿que observas en el directorio resultados/out?
+¿qué observas en el directorio resultados/out?
 
 Si ejecutaste todo bien debes de obtener un archivo similar al archivo que se encuentra en la carpeta resultados_esperados de este repositorio.
 
