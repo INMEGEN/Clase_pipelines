@@ -20,12 +20,12 @@ Consulta la información sobre estos flujos [aquí](https://serviciosbio.inmegen
 ### Clona este repositorio
 Para clonar este repositorio utiliza el comando git clone
 
-		git clone URL 
+	git clone https://github.com/INMEGEN/Clase_pipelines.git 
 
 ### Repositorio [pipelines Inmegen](https://github.com/INMEGEN/Pipelines_INMEGEN)
 Para clonar el repositorio pipelines Inmegen 
 
-		git clone https://github.com/INMEGEN/Pipelines_INMEGEN.git
+	git clone https://github.com/INMEGEN/Pipelines_INMEGEN.git
 
 ### Pofesores
 
