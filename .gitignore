@@ -1,0 +1,8 @@
+### Ignorar los archivos log de nexttlow
+.nextflow*
+
+### Ignorar el directorio test_config/
+test_config/
+
+### Ignorar el directorio res_out/
+res_out/
