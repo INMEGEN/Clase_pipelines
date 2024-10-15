@@ -49,10 +49,10 @@ Modifica los archivos main.nf, modules.nf y nextflow.config para automatizar las
 
 1. Colocate en tu home y crea un directorio llamado ej_fastqc
 
-		cd 
+		cd
 		mkdir ej_fastqc
 
-2. Ejecuta el comando fastqc para el archivo que inicia con **HBR_Rep1**
+3. Ejecuta el comando fastqc para el archivo que inicia con **HBR_Rep1**
 
 		fastqc -o ej_fastqc -t 1 -f fastq -q data/HBR_Rep1_ERCC-Mix2_Build37-ErccTranscripts-chr22.read1.fastq.gz data/HBR_Rep1_ERCC-Mix2_Build37-ErccTranscripts-chr22.read2.fastq.gz 
 
@@ -72,7 +72,7 @@ Revisa que salida obtuvimos en la carpeta ej_fastqc
 - Script del proceso: comando fastqc
 
 		mkdir -p ${sample}
-		fastqc -o ${sample} -t ${params.ncrs} -f fastq -q ${reads[0]} ${reads[1]}
+  		fastqc -o ${sample} -t ${params.ncrs} -f fastq -q ${reads[0]} ${reads[1]}
 
 
 4. Modifica el proceso fastqc en el archivo main.nf y modules.nf 
