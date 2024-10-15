@@ -6,7 +6,7 @@ Consulta la información sobre estos flujos [aquí](https://serviciosbio.inmegen
 El archivo CPI_clase1.pdf contiene la presentación de esta clase
 
 ## Parte práctica
-### Conectate al servidor de enseñanza del Inmegen Drona
+### Conéctate al servidor de enseñanza del Inmegen Drona
 Utilizando el comando **ssh** conectate a la dirección drona.inmegen.gob.mx o a la idrección IP:
 
 Por ejemplo:
@@ -21,7 +21,7 @@ Para clonar este repositorio utiliza el comando git clone
 	git clone https://github.com/INMEGEN/Clase_pipelines.git
 
 
-### Obten los datos de prueba
+### Obtén los datos de prueba
 
  - Crea un directorio en tu home denominado data:
 
@@ -31,7 +31,7 @@ Para clonar este repositorio utiliza el comando git clone
 
 		cd data/
 
- - Obten los datos de prueba con:
+ - Obtén los datos de prueba con:
 
 		wget http://genomedata.org/rnaseq-tutorial/HBR_UHR_ERCC_ds_5pc.tar
 
@@ -83,7 +83,7 @@ Revisa que salida obtuvimos en la carpeta ej_fastqc
 
 		nextflow run main.nf
 
-¿qué observas en el directorio resultados/out?
+¿Qué observas en el directorio resultados/out?
 
 #### Forma de correr FASTP 
 
@@ -122,7 +122,7 @@ Como el archivo json tiene un nombre genérico, le cambiamos el nombre con:
 
 		nextflow run main.nf
 
-¿qué observas en el directorio resultados/out?
+¿Qué observas en el directorio resultados/out?
 
 Si ejecutaste todo bien debes de obtener un archivo similar al archivo que se encuentra en la carpeta resultados_esperados de este repositorio.
 
