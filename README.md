@@ -1,5 +1,4 @@
 [![INMEGEN](https://www.inmegen.gob.mx/static/zinnia/inmegen_logo_sl.png)](https://www.inmegen.gob.mx/)
-
 # Aprende a utilizar los flujos de análisis bioinformáticos internos del Inmegen
 
 [![Nextflow](https://img.shields.io/badge/nextflow%20DSL2-%E2%89%A522.10.7-23aa62.svg)](https://www.nextflow.io/)
