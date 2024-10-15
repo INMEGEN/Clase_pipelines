@@ -89,33 +89,40 @@ Revisa que salida obtuvimos en la carpeta ej_fastqc
 
 1. Colocate en tu home y crea un directorio llamado ej_fastqc
 
-                cd
-                mkdir ej_fastp
+		cd
+		mkdir ej_fastp
 
-2. Ejecuta el comando fastqc para el archivo que inicia con **HBR_Rep1**
+3. Ejecuta el comando fastqc para el archivo que inicia con **HBR_Rep1**
 
 		fastp --in1 data/HBR_Rep1_ERCC-Mix2_Build37-ErccTranscripts-chr22.read1.fastq.gz --in2 data/HBR_Rep1_ERCC-Mix2_Build37-ErccTranscripts-chr22.read2.fastq.gz --out1 ej_fastp/HBR_Rep1_ERCC-Mix2_Build37_R1.trimmed.fq.gz --out2 ej_fastp/HBR_Rep1_ERCC-Mix2_Build37_R2.trimmed.fq.gz -g 10 -q 20 -l 50 -h HBR_Rep1_fastp.html
 
 Como el archivo json tiene un nombre generico le cambuamos el nombre con:
 
-		mv fastp.json HBR_Rep1_fastp.json
+	mv fastp.json HBR_Rep1_fastp.json
 
 3. Modificamos el comando de fastp para correrlo en un proceso de NextFlow
 
 - Entrada del proceso fastp: tupla [sample,[read1,read2]]
 
-                tuple val(sample), path(reads)
+		tuple val(sample), path(reads)
 
 - Salida el proceso fastqc: archivos trimeados por muestra y los reportes en json y html
 
 		tuple val(sample), path("${sample}_R1.trimmed.fq.gz"), path("${sample}_R2.trimmed.fq.gz"), emit: trim_fq
-		tuple path("${sample}_fastp.html"), path("${sample}_fastp.json")
+  		tuple path("${sample}_fastp.html"), path("${sample}_fastp.json")
 
 - Script del proceso: comando fastqc
 
 		fastp --in1 ${reads[0]} --in2 ${reads[1]} --out1 ${sample}_R1.trimmed.fq.gz --out2 ${sample}_R2.trimmed.fq.gz -g 9 -q 20 -l 50 -h ${sample}_fastp.html
-		mv fastp.json ${sample}_fastp.json
+  		mv fastp.json ${sample}_fastp.json
+
+4. Modifica el proceso fastqc en el archivo main.nf y modules.nf 
+
+6. Corre NextFlow con el comando:
+
+		nextflow run main.nf
 
 ¿que observas en el directorio resultados/out?
 
-Si ejecutaste todo bien debes de obtener un archivo similar al archivo que se encuentra en la carpeta resultados_esperados de este repositorio
+Si ejecutaste todo bien debes de obtener un archivo similar al archivo que se encuentra en la carpeta resultados_esperados de este repositorio.
+
