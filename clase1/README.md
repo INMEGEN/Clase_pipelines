@@ -5,7 +5,7 @@ Consulta la información sobre estos flujos [aquí](https://serviciosbio.inmegen
 ## Clase 1 Introducción a NextFlow y Docker
 El archivo CPI_clase1.pdf contiene la presentación de esta clase
 
-##Parte práctica
+## Parte práctica
 ### Conectate al servidor de enseñanza del Inmegen Drona
 Utilizando el comando **ssh** conectate a la dirección drona.inmegen.gob.mx o a la idrección IP:
 
