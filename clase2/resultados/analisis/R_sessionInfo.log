@@ -1,0 +1,117 @@
+[1] "Tabla utilizada para generar el objeto dds de DESeq2"
+       condition
+HBR_R1   control
+HBR_R2   control
+HBR_R3   control
+UHR_R1   treated
+UHR_R2   treated
+UHR_R3   treated
+[1] "Descripcion de los metadatos del objeto results de DESeq2"
+[1] "mean of normalized counts for all samples"           
+[2] "log2 fold change (MLE): condition treated vs control"
+[3] "standard error: condition treated vs control"        
+[4] "Wald statistic: condition treated vs control"        
+[5] "Wald test p-value: condition treated vs control"     
+[6] "BH adjusted p-values"                                
+[1] "Resumen del objeto results de DESeq2"
+
+out of 291 with nonzero total read count
+adjusted p-value < 0.1
+LFC > 0 (up)       : 83, 29%
+LFC < 0 (down)     : 92, 32%
+outliers [1]       : 0, 0%
+low counts [2]     : 0, 0%
+(mean count < 16)
+[1] see 'cooksCutoff' argument of ?results
+[2] see 'independentFiltering' argument of ?results
+
+[1] "Informacion de la sesion de R"
+R version 4.3.2 (2023-10-31)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: Ubuntu 20.04.6 LTS
+
+Matrix products: default
+BLAS:   /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3 
+LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/liblapack.so.3;  LAPACK version 3.9.0
+
+locale:
+[1] C
+
+time zone: America/Mexico_City
+tzcode source: system (glibc)
+
+attached base packages:
+[1] grid      stats4    stats     graphics  grDevices utils     datasets 
+[8] methods   base     
+
+other attached packages:
+ [1] enrichR_3.2                 topGO_2.54.0               
+ [3] SparseM_1.84-2              GO.db_3.18.0               
+ [5] graph_1.80.0                AnnotationDbi_1.64.1       
+ [7] ComplexHeatmap_2.21.1       PCAtools_2.14.0            
+ [9] ggrepel_0.9.6               ggplot2_3.5.1              
+[11] DESeq2_1.42.1               SummarizedExperiment_1.32.0
+[13] Biobase_2.62.0              MatrixGenerics_1.14.0      
+[15] matrixStats_1.4.1           GenomicRanges_1.54.1       
+[17] GenomeInfoDb_1.38.8         IRanges_2.36.0             
+[19] S4Vectors_0.40.2            BiocGenerics_0.48.1        
+[21] BUSpaRse_1.18.1             dplyr_1.1.4                
+[23] readr_2.1.5                 tximport_1.30.0            
+[25] tximportData_1.30.0         optparse_1.7.5             
+
+loaded via a namespace (and not attached):
+  [1] RColorBrewer_1.1-3        shape_1.4.6.1            
+  [3] magrittr_2.0.3            GenomicFeatures_1.54.4   
+  [5] farver_2.1.2              GlobalOptions_0.1.2      
+  [7] BiocIO_1.12.0             zlibbioc_1.48.2          
+  [9] vctrs_0.6.5               memoise_2.0.1            
+ [11] Rsamtools_2.18.0          DelayedMatrixStats_1.24.0
+ [13] RCurl_1.98-1.16           S4Arrays_1.2.1           
+ [15] progress_1.2.3            curl_5.2.3               
+ [17] Rhdf5lib_1.24.2           rhdf5_2.46.1             
+ [19] SparseArray_1.2.4         plyr_1.8.9               
+ [21] cachem_1.1.0              GenomicAlignments_1.38.2 
+ [23] lifecycle_1.0.4           iterators_1.0.14         
+ [25] pkgconfig_2.0.3           rsvd_1.0.5               
+ [27] Matrix_1.6-1.1            R6_2.5.1                 
+ [29] fastmap_1.2.0             GenomeInfoDbData_1.2.11  
+ [31] clue_0.3-65               digest_0.6.37            
+ [33] colorspace_2.1-1          dqrng_0.4.1              
+ [35] irlba_2.3.5.1             RSQLite_2.3.7            
+ [37] beachmat_2.18.1           labeling_0.4.3           
+ [39] WriteXLS_6.7.0            filelock_1.0.3           
+ [41] fansi_1.0.6               httr_1.4.7               
+ [43] abind_1.4-8               compiler_4.3.2           
+ [45] bit64_4.5.2               withr_3.0.1              
+ [47] doParallel_1.0.17         BiocParallel_1.36.0      
+ [49] DBI_1.2.3                 biomaRt_2.58.2           
+ [51] rappdirs_0.3.3            DelayedArray_0.28.0      
+ [53] rjson_0.2.23              tools_4.3.2              
+ [55] glue_1.8.0                restfulr_0.0.15          
+ [57] rhdf5filters_1.14.1       cluster_2.1.4            
+ [59] reshape2_1.4.4            generics_0.1.3           
+ [61] gtable_0.3.5              BSgenome_1.70.2          
+ [63] tzdb_0.4.0                tidyr_1.3.1              
+ [65] ensembldb_2.24.1          hms_1.1.3                
+ [67] BiocSingular_1.18.0       ScaledMatrix_1.10.0      
+ [69] xml2_1.3.6                utf8_1.2.4               
+ [71] XVector_0.42.0            foreach_1.5.2            
+ [73] pillar_1.9.0              stringr_1.5.1            
+ [75] circlize_0.4.16           getopt_1.20.4            
+ [77] BiocFileCache_2.10.2      lattice_0.21-9           
+ [79] rtracklayer_1.62.0        bit_4.5.0                
+ [81] tidyselect_1.2.1          locfit_1.5-9.10          
+ [83] Biostrings_2.70.3         ProtGenerics_1.32.0      
+ [85] stringi_1.8.4             lazyeval_0.2.2           
+ [87] yaml_2.3.10               codetools_0.2-19         
+ [89] tibble_3.2.1              cli_3.6.3                
+ [91] munsell_0.5.1             Rcpp_1.0.13              
+ [93] zeallot_0.1.0             dbplyr_2.5.0             
+ [95] png_0.1-8                 XML_3.99-0.17            
+ [97] parallel_4.3.2            blob_1.2.4               
+ [99] prettyunits_1.2.0         AnnotationFilter_1.24.0  
+[101] sparseMatrixStats_1.14.0  plyranges_1.20.0         
+[103] bitops_1.0-9              scales_1.3.0             
+[105] purrr_1.0.2               crayon_1.5.3             
+[107] GetoptLong_1.0.5          rlang_1.1.4              
+[109] cowplot_1.1.3             KEGGREST_1.42.0          
