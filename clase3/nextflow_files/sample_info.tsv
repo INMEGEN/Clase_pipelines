@@ -1,0 +1,4 @@
+Sample_name	SampleID	RG_PU	RG_PL	RG_LB	R1	R2
+HM1_S1	HM1_S1	HWIST718.1	ILLUMINA	BC0001	/STORAGE/servicios/2024-Curso/data/HM1_S1_R1.fastq.gz	/STORAGE/servicios/2024-Curso/data/HM1_S1_R2.fastq.gz
+HM2_S1	HM2_S1	HWIST718.1	ILLUMINA	BC0001	/STORAGE/servicios/2024-Curso/data/HM2_S1_R1.fastq.gz	/STORAGE/servicios/2024-Curso/data/HM2_S1_R2.fastq.gz
+HM3_S1	HM3_S1	HWIST718.1	ILLUMINA	BC0001	/STORAGE/servicios/2024-Curso/data/HM3_S1_R1.fastq.gz	/STORAGE/servicios/2024-Curso/data/HM3_S1_R2.fastq.gz
