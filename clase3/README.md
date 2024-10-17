@@ -2,7 +2,7 @@
 En este curso aprenderás a ejecutar los flujos de análisis bioinformáticos del Inmegen en los equipos de supercómputo del instituto
 Consulta la información sobre estos flujos [aquí](https://serviciosbio.inmegen.gob.mx/)
 
-## Clase 3 Flujo de trabajo 
+## Clase 3 Flujo de trabajo **"Identificación de variantes germinales a partir de datos de RNAseq"**
 El archivo CPI_clase3.pdf contiene la presentación de esta clase
 
 Recuerda que según la [definición del NIH](https://www.cancer.gov/espanol/publicaciones/diccionarios/diccionario-genetica/def/variante): Una variante es una alteración en la secuencia más común de nucleótidos del ADN. El término variante se usa para describir una alteración que puede ser benigna, patógena o de repercusión incierta. Este término se usa cada vez más en lugar del término mutación. También se llama variación de secuencia, variación genética, variante de secuencia y variante genética. Por lo que la indentificación de variantes es de los estudios más realizados hoy en día.
