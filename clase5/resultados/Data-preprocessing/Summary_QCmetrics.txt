@@ -1,0 +1,3 @@
+Sample id	Depth mean	Total bases	N bases on target	Percent of bases on target
+H67	0.01x	3173861256	22472207	0.70804
+H82	0.00x	3171791034	12303139	0.387892
